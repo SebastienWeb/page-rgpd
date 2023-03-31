@@ -1,0 +1,48 @@
+@use "../utils/variables";
+.dataRgpd {
+  padding: 69px 16px 120px !important;
+  text-align: center !important;
+  background-color: #f1f6fc !important;
+  position: relative;
+  &__h2,
+  &__firstContent {
+    line-height: 1.5 !important;
+  }
+  &__firstContent,
+  &__secondContent {
+    font-weight: 500 !important;
+  }
+  &__h2 {
+    font-weight: bold !important;
+    font-size: 1.4em !important;
+  }
+  &__firstContent {
+    padding-top: 14px !important;
+  }
+  &__hr {
+    width: 106px !important;
+    height: 2px !important;
+    background-color: variables.$primary-color !important;
+    border: none !important;
+    margin: 14px auto !important;
+  }
+  &__secondContent {
+    margin: 28px 0 38px !important;
+    line-height: 1.5 !important;
+  }
+  &__btn {
+    border: 0;
+    background-color: #333333 !important;
+    color: white !important;
+    padding: 14px 28px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 32px !important;
+    margin: 0 auto !important;
+    &__p {
+      font-size: 0.938em !important;
+      line-height: 1.5 !important;
+      font-weight: bold !important;
+    }
+  }
+}

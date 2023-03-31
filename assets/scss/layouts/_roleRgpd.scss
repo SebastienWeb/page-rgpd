@@ -1,0 +1,32 @@
+@use "../utils/variables";
+.roleRgpd {
+  color: white !important;
+  background-color: variables.$primary-color !important;
+  text-align: center !important;
+  padding: 66px 16px !important;
+  margin-top: 85px !important;
+  &__h2,
+  &__firstContent {
+    font-weight: bold !important;
+  }
+  &__firstContent,
+  &__secondContent {
+    line-height: 2 !important;
+    font-size: 0.875em !important;
+  }
+  &__span {
+    font-size: 0.875em !important;
+  }
+  &__h2 {
+    font-size: 1.625em !important;
+    padding: 14px 0 !important;
+  }
+  &__firstContent {
+    padding-bottom: 20px !important;
+  }
+  &__textColor {
+    background-color: #00388f !important;
+    padding: 6px !important;
+    font-size: 0.875em !important;
+  }
+}

@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+html,
+body {
+  font-size: 16px !important;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.containerRgpd {
+  padding: 121px 0 0 !important;
+}
+.containerRgpd__h1, .containerRgpd__p {
+  text-align: center !important;
+  line-height: 1.4 !important;
+  font-weight: bold !important;
+  padding: 0 16px !important;
+}
+.containerRgpd__h1 {
+  font-size: 1.3em !important;
+  padding-bottom: 8px !important;
+}
+.containerRgpd__p {
+  font-size: 0.938em !important;
+}
+
+.roleRgpd {
+  color: white !important;
+  background-color: #2480c1 !important;
+  text-align: center !important;
+  padding: 66px 16px !important;
+  margin-top: 85px !important;
+}
+.roleRgpd__h2, .roleRgpd__firstContent {
+  font-weight: bold !important;
+}
+.roleRgpd__firstContent, .roleRgpd__secondContent {
+  line-height: 2 !important;
+  font-size: 0.875em !important;
+}
+.roleRgpd__span {
+  font-size: 0.875em !important;
+}
+.roleRgpd__h2 {
+  font-size: 1.625em !important;
+  padding: 14px 0 !important;
+}
+.roleRgpd__firstContent {
+  padding-bottom: 20px !important;
+}
+.roleRgpd__textColor {
+  background-color: #00388f !important;
+  padding: 6px !important;
+  font-size: 0.875em !important;
+}
+
+.dataRgpd {
+  padding: 69px 16px 120px !important;
+  text-align: center !important;
+  background-color: #f1f6fc !important;
+  position: relative;
+}
+.dataRgpd__h2, .dataRgpd__firstContent {
+  line-height: 1.5 !important;
+}
+.dataRgpd__firstContent, .dataRgpd__secondContent {
+  font-weight: 500 !important;
+}
+.dataRgpd__h2 {
+  font-weight: bold !important;
+  font-size: 1.4em !important;
+}
+.dataRgpd__firstContent {
+  padding-top: 14px !important;
+}
+.dataRgpd__hr {
+  width: 106px !important;
+  height: 2px !important;
+  background-color: #2480c1 !important;
+  border: none !important;
+  margin: 14px auto !important;
+}
+.dataRgpd__secondContent {
+  margin: 28px 0 38px !important;
+  line-height: 1.5 !important;
+}
+.dataRgpd__btn {
+  border: 0;
+  background-color: #333333 !important;
+  color: white !important;
+  padding: 14px 28px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 32px !important;
+  margin: 0 auto !important;
+}
+.dataRgpd__btn__p {
+  font-size: 0.938em !important;
+  line-height: 1.5 !important;
+  font-weight: bold !important;
+}
+
+.conformiteRgpd {
+  position: absolute;
+  background-color: #00388f;
+  left: 0;
+  bottom: -880px;
+  color: white;
+  padding: 32px;
+}
+.conformiteRgpd__span {
+  font-size: 0.875em !important;
+  font-weight: 500 !important;
+}
+.conformiteRgpd__h2 {
+  padding: 32px 0;
+  font-size: 1.25em;
+}
+.conformiteRgpd__containerCard {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.conformiteRgpd__card {
+  background-color: white;
+  color: #00388f;
+  border-radius: 10px;
+  padding: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/*# sourceMappingURL=main.css.map */

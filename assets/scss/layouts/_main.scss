@@ -1,0 +1,17 @@
+.containerRgpd {
+  padding: 121px 0 0 !important;
+  &__h1,
+  &__p {
+    text-align: center !important;
+    line-height: 1.4 !important;
+    font-weight: bold !important;
+    padding: 0 16px !important;
+  }
+  &__h1 {
+    font-size: 1.3em !important;
+    padding-bottom: 8px !important;
+  }
+  &__p {
+    font-size: 0.938em !important;
+  }
+}
