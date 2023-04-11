@@ -1,10 +1,20 @@
 @use "../utils/variables";
-.roleRgpd {
+@use "../utils/mixins";
+
+#containerRgpd .roleRgpd {
+  position: relative important;
   color: white !important;
   background-color: variables.$primary-color !important;
   text-align: center !important;
   padding: 66px 16px !important;
-  margin-top: 85px !important;
+  margin-top: 136px !important;
+  @include mixins.xxl {
+    max-width: 1200px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    text-align: left !important;
+    padding-left: 360px !important;
+  }
   &__h2,
   &__firstContent {
     font-weight: bold !important;
@@ -14,12 +24,61 @@
     line-height: 2 !important;
     font-size: 0.875em !important;
   }
+  &__img {
+    position: absolute !important;
+    width: 90% !important;
+    height: 200px !important;
+    bottom: 70% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    &::before {
+      content: "" !important;
+      position: absolute !important;
+      top: -23px !important;
+      left: -60px !important;
+      width: 90% !important;
+      height: 504px !important;
+      background-color: #f8f8f8 !important;
+      display: none !important ;
+      @include mixins.xxl {
+        display: block !important ;
+      }
+    }
+    @include mixins.mobile {
+      bottom: 62% !important;
+    }
+    @include mixins.tablet {
+      bottom: 56% !important;
+    }
+    @include mixins.xxl {
+      bottom: -43% !important;
+      width: 32% !important;
+      height: 504px !important;
+      left: 11% !important;
+    }
+    &__imgBlock {
+      display: block !important;
+      width: 100% !important;
+      height: 200px !important;
+      object-fit: cover !important;
+      z-index: 1 !important;
+      position: relative !important;
+      @include mixins.xxl {
+        height: 504px !important;
+      }
+    }
+  }
   &__span {
     font-size: 0.875em !important;
+    margin-top: 60px !important;
+    display: block !important;
   }
   &__h2 {
     font-size: 1.625em !important;
     padding: 14px 0 !important;
+    @include mixins.tablet {
+      font-size: 2.625em !important;
+    }
   }
   &__firstContent {
     padding-bottom: 20px !important;

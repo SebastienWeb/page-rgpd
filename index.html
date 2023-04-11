@@ -13,12 +13,15 @@
 </head>
 
 <body>
-  <main class="containerRgpd">
-    <h1 class="containerRgpd__h1">
+  <div id="containerRgpd" class="containerRgpd">
+    <h2 class="containerRgpd__h2">
       Le droit à la protection de ses données concerne tout le monde !
-    </h1>
+    </h2>
     <p class="containerRgpd__p">Notre cabinet vous accompagne pour faire vos premiers pas vers la conformité RGPD !</p>
     <section class="roleRgpd">
+      <div class="roleRgpd__img">
+        <img class="roleRgpd__img__imgBlock" src="./assets/images/Clip.png" alt="">
+      </div>
       <span class="roleRgpd__span">QUEL EST LE RÔLE DU RGPD ?</span>
       <h2 class="roleRgpd__h2">Le RGPD, c'est quoi ?</h2>
       <p class="roleRgpd__firstContent">
@@ -36,26 +39,60 @@
     </section>
     <section class="dataRgpd">
       <div class="dataRgpd__container">
-        <h2 class="dataRgpd__h2">Qu'elles sont les données concernés par le RGPD ?</h2>
-        <p class="dataRgpd__firstContent">Est-ce que ce sont les données de vos clients ? S'agit-il des données de vos
-          employés ? Les données de vos
-          fournisseurs
-          ?</p>
-        <hr class="dataRgpd__hr">
-        <p class="dataRgpd__secondContent">L’objectif de la réglementation est de protéger l’individu en préservant ses
-          droits. Il va s’agir de
-          l’ensemble des
-          données qui vont être confiées à votre entreprise. Ce sont toutes les informations qui vont se rattacher à une
-          personne
-          physique.</p>
-        <a href="#">
-          <button class="dataRgpd__btn">
-            <img class="dataRgpd__btn__img" src="./assets/images/-e-fleche.svg" alt="">
-            <p class="dataRgpd__btn__p">Échangeons nous</p>
-          </button>
-        </a>
+        <div class="dataRgpd__container__div">
+          <h2 class="dataRgpd__h2">Qu'elles sont les données concernés par le RGPD ?</h2>
+          <p class="dataRgpd__firstContent">Est-ce que ce sont les données de vos clients ? S'agit-il des données de vos
+            employés ? Les données de vos
+            fournisseurs
+            ?</p>
+          <hr class="dataRgpd__hr">
+          <p class="dataRgpd__secondContent">L’objectif de la réglementation est de protéger l’individu en préservant
+            ses
+            droits. Il va s’agir de
+            l’ensemble des
+            données qui vont être confiées à votre entreprise. Ce sont toutes les informations qui vont se rattacher à
+            une
+            personne
+            physique.</p>
+          <a href="#">
+            <button class="dataRgpd__btn">
+              <img class="dataRgpd__btn__img" src="./assets/images/-e-fleche.svg" alt="">
+              <p class="dataRgpd__btn__p">Échangeons nous</p>
+            </button>
+          </a>
+        </div>
+        <div class="dataRgpd__circleSquare">
+          <img class="dataRgpd__circleSquare__img" src="./assets/images/circleElipse.svg" alt="">
+          <div class="dataRgpd__circleSquare__stars">
+            <div class="dataRgpd__circleSquare__stars__container">
+              <img src="./assets/images/Forme 3.svg" alt="">
+            </div>
+            <div class="dataRgpd__circleSquare__circleAbsolute dataRgpd__circleSquare__circleAbsolute--geo">
+              <h2 class="dataRgpd__circleSquare__circleAbsolute__span">Géolocalisation</h2>
+            </div>
+            <div class="dataRgpd__circleSquare__circleAbsolute dataRgpd__circleSquare__circleAbsolute--tel">
+              <span class="dataRgpd__circleSquare__circleAbsolute__span">Téléphone</span>
+            </div>
+            <div class="dataRgpd__circleSquare__circleAbsolute dataRgpd__circleSquare__circleAbsolute--age">
+              <span class="dataRgpd__circleSquare__circleAbsolute__span">Âge</span>
+            </div>
+            <div class="dataRgpd__circleSquare__circleAbsolute dataRgpd__circleSquare__circleAbsolute--nom">
+              <span class="dataRgpd__circleSquare__circleAbsolute__span">Nom</span>
+            </div>
+            <div class="dataRgpd__circleSquare__circleAbsolute dataRgpd__circleSquare__circleAbsolute--prenom">
+              <span class="dataRgpd__circleSquare__circleAbsolute__span">Prénom</span>
+            </div>
+            <div class="dataRgpd__circleSquare__circleAbsolute dataRgpd__circleSquare__circleAbsolute--adresse">
+              <span class="dataRgpd__circleSquare__circleAbsolute__span">Adresse</span>
+            </div>
+            <div class="dataRgpd__circleSquare__circleAbsolute dataRgpd__circleSquare__circleAbsolute--status">
+              <span class="dataRgpd__circleSquare__circleAbsolute__span">Status</span>
+            </div>
+          </div>
+        </div>
       </div>
       <section class="conformiteRgpd">
+        <img class="conformiteRgpd__img" src="./assets/images/Forme 4.svg" alt="">
         <span class="conformiteRgpd__span">GAGNEZ DU TEMPS EN VOUS METTANT EN CONFORMITÉ !</span>
         <h2 class="conformiteRgpd__h2">Comment se mettre en conformité ?</h2>
         <p class="conformiteRgpd__firstContent">65% des entreprises ne sont pas en conformité avec la réglementation
@@ -82,8 +119,160 @@
         </div>
       </section>
     </section>
-
-  </main>
+    <section class="sanctionRgpd">
+      <div class="sanctionRgpd__circleSquare">
+        <div class="sanctionRgpd__circleSquareIcon">
+          <img src="./assets/images/Forme 5.svg" alt="">
+        </div>
+      </div>
+      <h2 class="sanctionRgpd__h2">En cas de contrôle, quelles sont les sanctions pour votre entreprise ?</h2>
+      <p class="sanctionRgpd__firstContent">Savez-vous dans quelles circonstances vous pouvez être contrôlé par la CNIL
+        ? Connaissez-vous les diverses
+        sanctions applicables à votre entreprise ?</p>
+      <hr class="sanctionRgpd__hr">
+      <p>En cas de violation au RGPD, il donne lieu à des sanctions dissuasives qui vont jusqu’à 20 millions d’euros et
+        jusqu’à
+        4% du CA</p>
+      <div class="sanctionRgpd__containerCard">
+        <div class="sanctionRgpd__containerCard__card">
+          <h3 class="sanctionRgpd__containerCard__card__h3">Les différentes possibilités de la mise en place d’un
+            contrôle :</h3>
+          <div class="sanctionRgpd__containerCard__card__containerIcon">
+            <img src="./assets/images/-e-fleche.svg" alt="">
+            <p>PLAINTES DE CLIENTS, ASSOCIATIONS DE CONSOMMATEURS, SYNDICATS...</p>
+          </div>
+          <div
+            class="sanctionRgpd__containerCard__card__containerIcon sanctionRgpd__containerCard__card__containerIcon--margin">
+            <img src="./assets/images/-e-fleche.svg" alt="">
+            <p>DÉLATIONS DE SALARIÉS, CONCURRENTS, FOURNISSEURS, PARTENAIRES...
+            </p>
+          </div>
+          <div class="sanctionRgpd__containerCard__card__containerIcon">
+            <img src="./assets/images/-e-fleche.svg" alt="">
+            <p>CYBER-INCIDENT</p>
+          </div>
+        </div>
+        <div class="sanctionRgpd__containerCard__card">
+          <h3 class="sanctionRgpd__containerCard__card__h3">Pourquoi nous vous recommandons de le faire rapidement:</h3>
+          <div class="sanctionRgpd__containerCard__card__containerIcon">
+            <img src="./assets/images/-e-fleche.svg" alt="">
+            <p>NUIRE À VOTRE IMAGE</p>
+          </div>
+          <div
+            class="sanctionRgpd__containerCard__card__containerIcon sanctionRgpd__containerCard__card__containerIcon--secondMargin">
+            <img src="./assets/images/-e-fleche.svg" alt="">
+            <p>SABOTER VOTRE RÉPUTATION</p>
+          </div>
+        </div>
+      </div>
+      <h3 class="sanctionRgpd__h3">Nous sommes à vos côtés pour faciliter votre mise en conformité.</h3>
+      <button class="sanctionRgpd__btn">AVANÇONS ENSEMBLE DANS CETTE MISSION !</button>
+    </section>
+    <section class="etapeRgpd">
+      <img class="etapeRgpd__img" src="./assets/images/Rectangle 8.png" alt="">
+      <div class="etapeRgpd__circlePrice">
+        <span>Offre de mise en conformité RGPD pour LES TPE à partir de 390€ HT</span>
+      </div>
+      <h2 class="etapeRgpd__h2">Les 6 étapes de la mission RGPD:</h2>
+      <div class="etapeRgpd__list">
+        <div class="etapeRgpd__list__iconList">
+          <div class="etapeRgpd__list__iconList__icon">
+            <span class="etapeRgpd__list__iconList__icon__span">1</span>
+          </div>
+          <p>MISE EN PLACE D’UN AUDIT</p>
+        </div>
+        <div class="etapeRgpd__list__iconList">
+          <div class="etapeRgpd__list__iconList__icon">
+            <span class="etapeRgpd__list__iconList__icon__span">2</span>
+          </div>
+          <p>REMISE D’UN REGISTRE DE VOS DONNÉES
+          </p>
+        </div>
+        <div class="etapeRgpd__list__iconList">
+          <div class="etapeRgpd__list__iconList__icon">
+            <span class="etapeRgpd__list__iconList__icon__span">3</span>
+          </div>
+          <p>PROPOSITION D’ACTIONS CORRECTIVES AVEC LA MISE À DISPOSITION D’OUTILS
+          </p>
+        </div>
+        <div class="etapeRgpd__list__iconList">
+          <div class="etapeRgpd__list__iconList__icon">
+            <span class="etapeRgpd__list__iconList__icon__span">4</span>
+          </div>
+          <p>ACCOMPAGNEMENT SUR LE FONCTIONNEMENT ET L’UTILISATION DE VOS OUTILS
+          </p>
+        </div>
+        <div class="etapeRgpd__list__iconList">
+          <div class="etapeRgpd__list__iconList__icon">
+            <span class="etapeRgpd__list__iconList__icon__span">5</span>
+          </div>
+          <p>UN ABONNEMENT DE SUIVI DE MISE À JOUR PEUT-ÊTRE PROPOSÉ EN FONCTION DE LA TAILLE DE VOTRE ENTREPRISE
+          </p>
+        </div>
+        <div class="etapeRgpd__list__iconList">
+          <div class="etapeRgpd__list__iconList__icon">
+            <span class="etapeRgpd__list__iconList__icon__span">6</span>
+          </div>
+          <p>FORMATION PRISE EN CHARGE PAR L’OPCO
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="podcast">
+      <div class="podcast__container">
+        <div class="podcast__left">
+          <span class="podcast__left__span">LE PODCAST</span>
+          <h2 class="podcast__left__h2">RGPD, mon entreprise est-elle concernée ?</h2>
+          <p>A quoi sert le RGPD ? Comment le mettre en place ? Quels sont les risques en cas de non-conformité ? Quels
+            sont les
+            acteurs qui peuvent m’aider dans les démarches ? Les réponses à ces questions sont dans cet épisode !</p>
+          <div class="podcast__left__player">
+            <div class="podcast__left__player__circle">
+              <img src="./assets/images/pause.svg" alt="">
+            </div>
+            <div class="podcast__left__player__rangePlayer">
+              <input class="podcast__left__player__rangePlayer__range" type="range" name="" id="" min="0" max="100">
+            </div>
+          </div>
+        </div>
+        <div class="podcast__right">
+          <div class="podcast__right__imgPlaceExpert">
+            <img class="podcast__right__imgPlaceExpert__imgExpertTop" class="" src="./assets/images/Group 1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contact__container">
+        <div class="contact__container__left">
+          <img class="contact__container__left__img" src="./assets/images/personnage.png" alt="">
+        </div>
+        <div class="contact__container__right">
+          <div class="contact__container__right__containerSpan">
+            <p class="contact__container__right__containerSpan__p">POUR ALLER PLUS LOIN</p>
+            <hr class="contact__container__right__containerSpan__hr">
+          </div>
+          <h2 class="contact__container__right__h2">Prenons rendez-vous !</h2>
+          <div class="contact__container_right">
+            <form action="#">
+              <div class="contact__container__right__containerTop">
+                <input type="text" placeholder="Nom">
+                <input type="tel" placeholder="Téléphone">
+              </div>
+              <input class="contact__container__right__email" type="email" placeholder="E-mail">
+              <div class="contact__container__right__containerCheckbox">
+                <input class="contact__container__right__containerCheckbox__input" type="checkbox">
+                <p class="contact__container__right__containerCheckbox__p">En soumettant ce formulaire, j'accepte que
+                  les informations saisies soient exploitées dans le cadre
+                  de
+                  la demande de devis et de la relation commerciale qui peut en découler.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
 </body>
 

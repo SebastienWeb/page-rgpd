@@ -1,0 +1,100 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+#containerRgpd .sanctionRgpd {
+  margin-top: 1032px !important;
+  text-align: center !important;
+  padding: 0 16px !important;
+  @include mixins.tablet {
+    margin-top: 800px !important;
+  }
+  @include mixins.laptop {
+    margin: 550px auto 0 !important;
+    max-width: 1224px !important;
+    width: 100% !important;
+  }
+  &__circleSquare {
+    width: 133px !important;
+    height: 133px !important;
+    background: variables.$primary-color !important;
+    margin: 0 auto !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  &__circleSquareIcon {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 4px solid white !important;
+  }
+  &__h2 {
+    margin-top: 23px !important;
+    line-height: 1.5 !important;
+    @include mixins.tablet {
+      font-size: 2em !important;
+    }
+  }
+  &__firstContent {
+    margin: 13px 0 !important;
+    font-weight: 500 !important;
+  }
+  &__hr {
+    width: 104px !important;
+    margin: 0 auto !important;
+    height: 2px !important;
+    border: none !important;
+    background: variables.$primary-color !important;
+    margin-bottom: 13px !important;
+  }
+  &__containerCard {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+    text-align: center !important;
+    color: white !important;
+    margin-top: 32px !important;
+    @include mixins.laptop {
+      flex-direction: initial !important;
+    }
+    &__card {
+      background: #333333 !important;
+      padding: 32px 16px !important;
+      @include mixins.laptop {
+        flex: 1 1 !important;
+        text-align: left !important;
+      }
+      &__h3 {
+        margin-bottom: 33px !important;
+      }
+      &__containerIcon {
+        @include mixins.tablet {
+          display: flex !important;
+          align-items: center !important;
+          gap: 32px !important;
+        }
+        &--margin {
+          margin: 32px 0 !important;
+        }
+        &--secondMargin {
+          margin-top: 32px !important;
+        }
+      }
+    }
+  }
+  &__h3 {
+    margin: 30px 0 !important;
+    font-weight: 500 !important;
+  }
+  &__btn {
+    background: variables.$primary-color !important;
+    border: none !important;
+    border-radius: 8px !important;
+    color: white !important;
+    padding: 16px 32px !important;
+  }
+}

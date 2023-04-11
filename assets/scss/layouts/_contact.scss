@@ -1,0 +1,84 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+#containerRgpd .contact {
+  margin-top: 64px !important;
+  text-align: center !important;
+  &__container {
+    @include mixins.laptop {
+      display: flex !important;
+    }
+    &__left {
+      &__img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+      }
+      @include mixins.laptop {
+        flex: 1 1 !important;
+      }
+    }
+    &__right {
+      text-align: center !important;
+      padding: 32px 16px !important;
+      background: #2480c1 !important;
+      color: white !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      flex-direction: column !important;
+      &__h2 {
+        margin: 24px 0 !important;
+        font-size: 1.5em !important;
+      }
+      &__containerTop {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 32px !important;
+        @include mixins.laptop {
+          flex-direction: initial !important;
+        }
+        & input {
+          border: none !important;
+          padding: 13.63px 0 9px 19px !important;
+          @include mixins.laptop {
+            flex: 1 1 !important;
+          }
+        }
+      }
+      &__email {
+        margin: 32px 0 !important;
+        border: none !important;
+        padding: 13.63px 0 9px 19px !important;
+        width: 100% !important;
+      }
+      &__containerSpan {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 32px !important;
+        align-items: center !important;
+        &__hr {
+          display: block !important;
+          height: 2px !important;
+          width: 80px !important;
+          background: white !important;
+          border: none !important;
+        }
+      }
+      &__containerCheckbox {
+        display: flex !important;
+        align-items: center !important;
+        gap: 32px !important;
+        &__input {
+          border: none !important;
+        }
+        &__p {
+          font-size: 0.875em !important;
+        }
+      }
+      @include mixins.laptop {
+        flex: 1 1 !important;
+      }
+    }
+  }
+}
