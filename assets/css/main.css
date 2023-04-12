@@ -41,7 +41,7 @@ a {
 }
 
 #containerRgpd .roleRgpd {
-  position: relative important;
+  position: relative !important;
   color: white !important;
   background-color: #2480c1 !important;
   text-align: center !important;
@@ -52,9 +52,9 @@ a {
   #containerRgpd .roleRgpd {
     max-width: 1200px !important;
     width: 100% !important;
-    margin: 0 auto !important;
+    margin: 245px auto 0 !important;
     text-align: left !important;
-    padding-left: 360px !important;
+    padding: 16px 16px 66px 360px !important;
   }
 }
 #containerRgpd .roleRgpd__h2, #containerRgpd .roleRgpd__firstContent {
@@ -71,6 +71,7 @@ a {
   bottom: 70% !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
+  object-fit: cover !important;
 }
 #containerRgpd .roleRgpd__img::before {
   content: "" !important;
@@ -99,10 +100,10 @@ a {
 }
 @media screen and (min-width: 1400px) {
   #containerRgpd .roleRgpd__img {
-    bottom: -43% !important;
-    width: 32% !important;
+    bottom: -40% !important;
+    width: 31% !important;
     height: 504px !important;
-    left: 11% !important;
+    left: 4% !important;
   }
 }
 #containerRgpd .roleRgpd__img__imgBlock {
@@ -495,9 +496,23 @@ a {
 #containerRgpd .conformiteRgpd__secondContent {
   font-weight: bold !important;
   border-bottom: 2px white solid !important;
-  width: 25% !important;
-  margin: 0 auto !important;
   margin-top: 30px !important;
+}
+@media screen and (min-width: 425px) {
+  #containerRgpd .conformiteRgpd__secondContent {
+    width: 80% !important;
+    margin: 30px auto 0 !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  #containerRgpd .conformiteRgpd__secondContent {
+    width: 40% !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #containerRgpd .conformiteRgpd__secondContent {
+    width: 30% !important;
+  }
 }
 #containerRgpd .conformiteRgpd__containerCard {
   display: flex !important;
@@ -654,34 +669,72 @@ a {
     padding-left: 360px !important;
   }
 }
+@media screen and (min-width: 1400px) {
+  #containerRgpd .etapeRgpd {
+    margin: 290px auto 0 !important;
+  }
+}
 #containerRgpd .etapeRgpd__img {
   position: absolute !important;
   width: 90% !important;
   height: 200px !important;
-  bottom: 76% !important;
+  bottom: 70% !important;
   left: 50% !important;
-  object-fit: cover !important;
   transform: translate(-50%, -50%) !important;
+  object-fit: cover !important;
+}
+#containerRgpd .etapeRgpd__img::before {
+  content: "" !important;
+  position: absolute !important;
+  top: -60px !important;
+  left: -60px !important;
+  width: 90% !important;
+  height: 504px !important;
+  background-color: #f8f8f8 !important;
+  display: none !important;
+}
+@media screen and (min-width: 1400px) {
+  #containerRgpd .etapeRgpd__img::before {
+    display: block !important;
+  }
 }
 @media screen and (min-width: 425px) {
   #containerRgpd .etapeRgpd__img {
-    bottom: 72% !important;
+    bottom: 62% !important;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   #containerRgpd .etapeRgpd__img {
-    bottom: -16% !important;
-    width: 35% !important;
+    bottom: 56% !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #containerRgpd .etapeRgpd__img {
+    bottom: -5% !important;
+    width: 31% !important;
     height: 504px !important;
-    left: 11% !important;
+    left: 4% !important;
+  }
+}
+#containerRgpd .etapeRgpd__img__imgBlock {
+  display: block !important;
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  z-index: 1 !important;
+  position: relative !important;
+}
+@media screen and (min-width: 1400px) {
+  #containerRgpd .etapeRgpd__img__imgBlock {
+    height: 504px !important;
   }
 }
 #containerRgpd .etapeRgpd__circlePrice {
   border-radius: 50% !important;
   background: #2480c1 !important;
   position: absolute !important;
-  width: 200px !important;
-  height: 200px !important;
+  width: 150px !important;
+  height: 150px !important;
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
@@ -689,9 +742,39 @@ a {
   font-weight: bold !important;
   border: 4px solid white !important;
   transform: rotate(15deg) !important;
-  right: 50px !important;
   top: -135px !important;
-  right: 15px !important;
+  right: 30px !important;
+}
+@media screen and (min-width: 1024px) {
+  #containerRgpd .etapeRgpd__circlePrice {
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #containerRgpd .etapeRgpd__circlePrice {
+    width: 250px !important;
+    height: 250px !important;
+    right: -50px !important;
+  }
+}
+#containerRgpd .etapeRgpd__circlePrice__span {
+  font-size: 0.7em !important;
+}
+@media screen and (min-width: 768px) {
+  #containerRgpd .etapeRgpd__circlePrice__span {
+    font-size: 0.8em !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #containerRgpd .etapeRgpd__circlePrice__span {
+    font-size: 1em !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #containerRgpd .etapeRgpd__circlePrice__span {
+    font-size: 1.3em !important;
+  }
 }
 #containerRgpd .etapeRgpd__h2 {
   margin: 60px 0 40px !important;

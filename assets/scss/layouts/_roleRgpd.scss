@@ -2,7 +2,7 @@
 @use "../utils/mixins";
 
 #containerRgpd .roleRgpd {
-  position: relative important;
+  position: relative !important;
   color: white !important;
   background-color: variables.$primary-color !important;
   text-align: center !important;
@@ -11,9 +11,9 @@
   @include mixins.xxl {
     max-width: 1200px !important;
     width: 100% !important;
-    margin: 0 auto !important;
+    margin: 245px auto 0 !important;
     text-align: left !important;
-    padding-left: 360px !important;
+    padding: 16px 16px 66px 360px !important;
   }
   &__h2,
   &__firstContent {
@@ -31,6 +31,7 @@
     bottom: 70% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
+    object-fit: cover !important;
     &::before {
       content: "" !important;
       position: absolute !important;
@@ -51,10 +52,10 @@
       bottom: 56% !important;
     }
     @include mixins.xxl {
-      bottom: -43% !important;
-      width: 32% !important;
+      bottom: -40% !important;
+      width: 31% !important;
       height: 504px !important;
-      left: 11% !important;
+      left: 4% !important;
     }
     &__imgBlock {
       display: block !important;
