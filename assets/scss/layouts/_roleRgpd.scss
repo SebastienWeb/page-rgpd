@@ -7,7 +7,7 @@
   background-color: variables.$primary-color !important;
   text-align: center !important;
   padding: 66px 16px !important;
-  margin-top: 136px !important;
+  margin-top: 100px !important;
   @include mixins.xxl {
     max-width: 1200px !important;
     width: 100% !important;
@@ -22,7 +22,7 @@
   &__firstContent,
   &__secondContent {
     line-height: 2 !important;
-    font-size: 0.875em !important;
+    font-size: 1.4em !important;
   }
   &__img {
     position: absolute !important;
@@ -55,7 +55,7 @@
       bottom: -40% !important;
       width: 31% !important;
       height: 504px !important;
-      left: 4% !important;
+      left: 12% !important;
     }
     &__imgBlock {
       display: block !important;
@@ -70,23 +70,34 @@
     }
   }
   &__span {
-    font-size: 0.875em !important;
+    font-size: 1.4em !important;
     margin-top: 60px !important;
     display: block !important;
+    @include mixins.xxl {
+      font-size: 1.6em !important;
+    }
   }
   &__h2 {
-    font-size: 1.625em !important;
+    font-size: 2.6em !important;
     padding: 14px 0 !important;
     @include mixins.tablet {
-      font-size: 2.625em !important;
+      font-size: 4.2em !important;
     }
   }
   &__firstContent {
     padding-bottom: 20px !important;
+    @include mixins.xxl {
+      font-size: 2em !important;
+    }
+  }
+  &__secondContent {
+    @include mixins.xxl {
+      font-size: 1.7em !important;
+    }
   }
   &__textColor {
     background-color: #00388f !important;
     padding: 6px !important;
-    font-size: 0.875em !important;
+    font-size: 1em !important;
   }
 }

@@ -1,27 +1,28 @@
 @use "../utils/mixins";
 
-#containerRgpd {
-  .containerRgpd {
-    padding: 121px 0 0 !important;
-    &__h2,
-    &__p {
-      text-align: center !important;
-      line-height: 1.4 !important;
-      font-weight: bold !important;
-      padding: 0 16px !important;
+#containerRgpd .containerRgpd {
+  padding: 60px 0 !important;
+  &__h2,
+  &__p {
+    text-align: center !important;
+    line-height: 1.4 !important;
+    font-weight: bold !important;
+    padding: 0 16px !important;
+  }
+  &__h2 {
+    font-size: 2em !important;
+    padding-bottom: 8px !important;
+    @include mixins.xxl {
+      width: 45% !important;
+      margin: 32px auto 0 !important;
+      font-size: 3.3em !important;
     }
-    &__h2 {
-      font-size: 1.3em !important;
-      padding-bottom: 8px !important;
-      margin-top: 32px !important;
-      @include mixins.xxl {
-        width: 29% !important;
-        margin: 32px auto 0 !important;
-      }
-    }
-    &__p {
-      font-size: 0.938em !important;
-      font-weight: 500 !important;
+  }
+  &__p {
+    font-size: 1.5em !important;
+    font-weight: 500 !important;
+    @include mixins.xxl {
+      font-size: 2.21em !important;
     }
   }
 }

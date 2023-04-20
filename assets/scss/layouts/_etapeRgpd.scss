@@ -11,10 +11,12 @@
     max-width: 1224px !important;
     width: 100% !important;
     margin: 150px auto 0 !important;
-    padding-left: 360px !important;
+    padding: 180px 16px 90px !important;
   }
   @include mixins.xxl {
+    max-width: 1188px !important;
     margin: 290px auto 0 !important;
+    padding: 60px 0 60px 326px !important;
   }
   &__img {
     position: absolute !important;
@@ -35,19 +37,20 @@
       display: none !important ;
       @include mixins.xxl {
         display: block !important ;
+        left: -10% !important;
       }
     }
     @include mixins.mobile {
       bottom: 62% !important;
     }
     @include mixins.tablet {
-      bottom: 56% !important;
+      bottom: 69% !important;
     }
     @include mixins.xxl {
-      bottom: -5% !important;
+      bottom: -25% !important;
       width: 31% !important;
       height: 504px !important;
-      left: 4% !important;
+      left: 10% !important;
     }
     &__imgBlock {
       display: block !important;
@@ -63,7 +66,7 @@
   }
   &__circlePrice {
     border-radius: 50% !important;
-    background: variables.$primary-color !important;
+    background: transparent;
     position: absolute !important;
     width: 150px !important;
     height: 150px !important;
@@ -72,40 +75,74 @@
     align-items: center !important;
     text-align: center !important;
     font-weight: bold !important;
-    border: 4px solid white !important;
     transform: rotate(15deg) !important;
+    border: 4px solid variables.$primary-color !important;
     top: -135px !important;
-    right: 30px !important;
+    right: 20px !important;
+    @include mixins.tablet {
+      width: 180px !important;
+      height: 180px !important;
+      top: -189px !important;
+      right: 20px !important;
+    }
     @include mixins.laptop {
       width: 200px !important;
       height: 200px !important;
+      right: 33px !important;
     }
     @include mixins.xxl {
       width: 250px !important;
       height: 250px !important;
       right: -50px !important;
+      top: -122px !important;
     }
-    &__span {
-      font-size: 0.7em !important;
+    &__div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: variables.$primary-color !important;
+      width: 132px !important;
+      height: 132px !important;
+      border-radius: 50%;
+      padding: 16px;
       @include mixins.tablet {
-        font-size: 0.8em !important;
+        width: 154px !important;
+        height: 154px !important;
       }
       @include mixins.laptop {
-        font-size: 1em !important;
+        width: 180px !important;
+        height: 180px !important;
       }
       @include mixins.xxl {
-        font-size: 1.3em !important;
+        width: 230px !important;
+        height: 230px !important;
+      }
+    }
+    &__p {
+      font-size: 1.2em !important;
+      @include mixins.tablet {
+        font-size: 1.45em !important;
+      }
+      @include mixins.laptop {
+        font-size: 1.5em !important;
+      }
+      @include mixins.xxl {
+        font-size: 2em !important;
       }
     }
   }
   &__h2 {
     margin: 60px 0 40px !important;
+    font-size: 1.6em !important;
     @include mixins.tablet {
-      font-size: 1.25em !important;
+      font-size: 2em !important;
     }
     @include mixins.laptop {
       font-size: 2em !important;
       margin: 0 0 40px !important;
+    }
+    @include mixins.xxl {
+      font-size: 3.4em !important;
     }
   }
   &__list {
@@ -116,6 +153,10 @@
       display: flex !important;
       gap: 32px !important;
       align-items: center !important;
+      font-size: 1.2em !important;
+      @include mixins.xxl {
+        font-size: 1.6em !important;
+      }
       &__icon {
         background: white !important;
         width: 39px !important;
@@ -127,6 +168,9 @@
         border-radius: 50% !important;
         padding: 16px !important;
         font-weight: bold !important;
+        @include mixins.xxl {
+          font-size: 1.5em !important;
+        }
         &__span {
           display: inline-block !important;
         }

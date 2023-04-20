@@ -23,12 +23,25 @@
   &__left {
     &__span {
       color: variables.$primary-color !important;
+      font-size: 1.2em !important;
+      @include mixins.tablet {
+        font-size: 1.8em !important;
+      }
     }
     &__h2 {
-      font-size: 1.25em !important;
+      font-size: 2em !important;
       margin: 8px 0 24px !important;
       @include mixins.tablet {
-        font-size: 2em !important;
+        font-size: 2.2em !important;
+      }
+      @include mixins.xxl {
+        font-size: 3.4em !important;
+      }
+    }
+    &__firstContent {
+      font-size: 1.2em !important;
+      @include mixins.tablet {
+        font-size: 1.45em !important;
       }
     }
     &__player {
@@ -36,8 +49,14 @@
       align-items: center !important;
       width: 100% !important;
       margin-top: 32px !important;
+      @include mixins.tablet {
+        justify-content: center !important;
+      }
+      @include mixins.xxl {
+        justify-content: initial !important;
+      }
       &__circle {
-        background: variables.$primary-color !important;
+        background: #00388f !important;
         width: 80px !important;
         height: 80px !important;
         padding: 16px !important;
@@ -48,10 +67,49 @@
       }
       &__rangePlayer {
         width: 80% !important;
-        background: #f1f6fc !important;
-        padding: 16px !important;
-        &__range {
+        height: 40px;
+        background: #f1f6fc;
+        margin-left: -10px;
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        padding: 0 16px !important;
+        @include mixins.xxl {
+          height: 50px !important;
+        }
+        .timeline_container {
           width: 100% !important;
+          height: 9px;
+          background: #ffffff;
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        & .timeline {
+          position: relative;
+          height: 9px;
+          width: 80%;
+          background: variables.$primary-color;
+          &::before {
+            content: "";
+            position: absolute;
+            background: variables.$primary-color;
+            width: 24px;
+            height: 24px;
+            top: -6px;
+            right: -7px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border: 2px solid white;
+            border-radius: 50%;
+            top: -4px;
+            right: -5px;
+          }
         }
       }
     }
@@ -70,28 +128,34 @@
         content: " " !important;
         display: block !important;
         position: absolute !important;
-        top: -25px !important;
-        left: 8% !important;
+        top: -26px !important;
+        left: -5% !important;
         background-color: #333333 !important;
-        width: 210px !important;
-        height: 210px !important;
+        width: 93% !important;
+        height: 94% !important;
         z-index: -1 !important;
         border-radius: 50%;
+        @include mixins.mobile375 {
+          top: -20px !important;
+          left: -2% !important;
+          width: 85% !important;
+          height: 94% !important;
+        }
         @include mixins.mobile {
-          top: -19px !important;
-          left: 9% !important;
-          width: 265px !important;
-          height: 265px !important;
+          left: 7% !important;
+          width: 73% !important;
+          height: 94% !important;
         }
         @include mixins.tablet {
           top: -20px !important;
           left: 211px !important;
+          width: 38% !important;
         }
         @include mixins.laptop {
           top: -23px !important;
-          left: -31px !important;
-          width: 380px !important;
-          height: 380px !important;
+          left: 8px !important;
+          width: 79% !important;
+          height: 94% !important;
         }
       }
       &::after {
@@ -119,10 +183,14 @@
         @include mixins.laptop {
           left: 250px !important;
         }
+        @include mixins.xxl {
+          left: 338px !important;
+        }
       }
       &__imgExpertTop {
         display: block !important;
         width: 70% !important;
+        min-width: 300px;
         margin: 0 auto !important;
         @include mixins.mobileL {
           width: 50% !important;
@@ -131,7 +199,6 @@
           width: 40% !important;
         }
         @include mixins.laptop {
-          margin: 0 !important;
           width: 84% !important;
         }
         @include mixins.desktop {

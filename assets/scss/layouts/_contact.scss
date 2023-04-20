@@ -13,9 +13,14 @@
         width: 100% !important;
         height: 100% !important;
         object-fit: cover !important;
+        display: block !important;
       }
       @include mixins.laptop {
         flex: 1 1 !important;
+      }
+      @include mixins.xxl {
+        flex: initial !important;
+        width: 50% !important;
       }
     }
     &__right {
@@ -27,9 +32,18 @@
       justify-content: center !important;
       align-items: center !important;
       flex-direction: column !important;
+      @include mixins.xxl {
+        align-items: initial !important;
+        padding: 120px !important;
+        width: 50% !important;
+        flex: initial !important;
+      }
       &__h2 {
         margin: 24px 0 !important;
-        font-size: 1.5em !important;
+        font-size: 2.4em !important;
+        @include mixins.xxl {
+          text-align: left !important;
+        }
       }
       &__containerTop {
         display: flex !important;
@@ -52,11 +66,25 @@
         padding: 13.63px 0 9px 19px !important;
         width: 100% !important;
       }
+      &__submit {
+        border: none !important;
+        padding: 8px 16px !important;
+        background: #00388f;
+        color: white;
+        margin-top: 32px;
+        border-radius: 4px;
+        @include mixins.xxl {
+          display: block !important;
+        }
+      }
       &__containerSpan {
         display: flex !important;
         justify-content: center !important;
         gap: 32px !important;
         align-items: center !important;
+        @include mixins.xxl {
+          justify-content: initial !important;
+        }
         &__hr {
           display: block !important;
           height: 2px !important;
@@ -64,16 +92,28 @@
           background: white !important;
           border: none !important;
         }
+        &__p {
+          font-size: 1.2em !important;
+          @include mixins.tablet {
+            font-size: 1.45em !important;
+          }
+        }
       }
       &__containerCheckbox {
         display: flex !important;
         align-items: center !important;
         gap: 32px !important;
+        @include mixins.xxl {
+          text-align: left !important;
+        }
         &__input {
           border: none !important;
         }
         &__p {
-          font-size: 0.875em !important;
+          font-size: 1.2em !important;
+          @include mixins.tablet {
+            font-size: 1.45em !important;
+          }
         }
       }
       @include mixins.laptop {

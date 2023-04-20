@@ -13,11 +13,14 @@
 </head>
 
 <body>
-  <div id="containerRgpd" class="containerRgpd">
-    <h2 class="containerRgpd__h2">
-      Le droit à la protection de ses données concerne tout le monde !
-    </h2>
-    <p class="containerRgpd__p">Notre cabinet vous accompagne pour faire vos premiers pas vers la conformité RGPD !</p>
+  <div id="containerRgpd">
+    <div class="containerRgpd">
+      <h2 class="containerRgpd__h2">
+        Le droit à la protection de ses données concerne tout le monde !
+      </h2>
+      <p class="containerRgpd__p">Notre cabinet vous accompagne pour faire vos premiers pas vers la conformité RGPD !
+      </p>
+    </div>
     <section class="roleRgpd">
       <div class="roleRgpd__img">
         <img class="roleRgpd__img__imgBlock" src="./assets/images/Clip.png" alt="">
@@ -57,7 +60,7 @@
           <a href="#">
             <button class="dataRgpd__btn">
               <img class="dataRgpd__btn__img" src="./assets/images/-e-fleche.svg" alt="">
-              <p class="dataRgpd__btn__p">Échangeons nous</p>
+              <p id="btnEchange" class="dataRgpd__btn__p">Échangeons nous</p>
             </button>
           </a>
         </div>
@@ -121,7 +124,7 @@
     </section>
     <section class="sanctionRgpd">
       <div class="sanctionRgpd__circleSquare">
-        <div class="sanctionRgpd__circleSquareIcon">
+        <div>
           <img src="./assets/images/Forme 5.svg" alt="">
         </div>
       </div>
@@ -130,7 +133,8 @@
         ? Connaissez-vous les diverses
         sanctions applicables à votre entreprise ?</p>
       <hr class="sanctionRgpd__hr">
-      <p>En cas de violation au RGPD, il donne lieu à des sanctions dissuasives qui vont jusqu’à 20 millions d’euros et
+      <p class="sanctionRgpd__secondContent">En cas de violation au RGPD, il donne lieu à des sanctions dissuasives qui
+        vont jusqu’à 20 millions d’euros et
         jusqu’à
         4% du CA</p>
       <div class="sanctionRgpd__containerCard">
@@ -139,29 +143,31 @@
             contrôle :</h3>
           <div class="sanctionRgpd__containerCard__card__containerIcon">
             <img src="./assets/images/-e-fleche.svg" alt="">
-            <p>PLAINTES DE CLIENTS, ASSOCIATIONS DE CONSOMMATEURS, SYNDICATS...</p>
+            <p class="sanctionRgpd__containerCard__card__containerIcon__p">PLAINTES DE CLIENTS, ASSOCIATIONS DE
+              CONSOMMATEURS, SYNDICATS...</p>
           </div>
           <div
             class="sanctionRgpd__containerCard__card__containerIcon sanctionRgpd__containerCard__card__containerIcon--margin">
             <img src="./assets/images/-e-fleche.svg" alt="">
-            <p>DÉLATIONS DE SALARIÉS, CONCURRENTS, FOURNISSEURS, PARTENAIRES...
+            <p class="sanctionRgpd__containerCard__card__containerIcon__p">DÉLATIONS DE SALARIÉS, CONCURRENTS,
+              FOURNISSEURS, PARTENAIRES...
             </p>
           </div>
           <div class="sanctionRgpd__containerCard__card__containerIcon">
             <img src="./assets/images/-e-fleche.svg" alt="">
-            <p>CYBER-INCIDENT</p>
+            <p class="sanctionRgpd__containerCard__card__containerIcon__p">CYBER-INCIDENT</p>
           </div>
         </div>
         <div class="sanctionRgpd__containerCard__card">
           <h3 class="sanctionRgpd__containerCard__card__h3">Pourquoi nous vous recommandons de le faire rapidement:</h3>
           <div class="sanctionRgpd__containerCard__card__containerIcon">
             <img src="./assets/images/-e-fleche.svg" alt="">
-            <p>NUIRE À VOTRE IMAGE</p>
+            <p class="sanctionRgpd__containerCard__card__containerIcon__p"> NUIRE À VOTRE IMAGE</p>
           </div>
           <div
             class="sanctionRgpd__containerCard__card__containerIcon sanctionRgpd__containerCard__card__containerIcon--secondMargin">
             <img src="./assets/images/-e-fleche.svg" alt="">
-            <p>SABOTER VOTRE RÉPUTATION</p>
+            <p class="sanctionRgpd__containerCard__card__containerIcon__p">SABOTER VOTRE RÉPUTATION</p>
           </div>
         </div>
       </div>
@@ -173,8 +179,11 @@
         <img class="etapeRgpd__img__imgBlock" src="./assets/images/Rectangle 8.png" alt="">
       </div>
       <div class="etapeRgpd__circlePrice">
-        <span class="etapeRgpd__circlePrice__span">Offre de mise en conformité RGPD pour LES TPE à partir de 390€
-          HT</span>
+        <div class="etapeRgpd__circlePrice__div">
+          <p class="etapeRgpd__circlePrice__p">Offre de mise en conformité RGPD pour LES TPE à partir de 390€
+            HT</p>
+        </div>
+
       </div>
       <h2 class="etapeRgpd__h2">Les 6 étapes de la mission RGPD:</h2>
       <div class="etapeRgpd__list">
@@ -226,7 +235,8 @@
         <div class="podcast__left">
           <span class="podcast__left__span">LE PODCAST</span>
           <h2 class="podcast__left__h2">RGPD, mon entreprise est-elle concernée ?</h2>
-          <p>A quoi sert le RGPD ? Comment le mettre en place ? Quels sont les risques en cas de non-conformité ? Quels
+          <p class="podcast__left__firstContent">A quoi sert le RGPD ? Comment le mettre en place ? Quels sont les
+            risques en cas de non-conformité ? Quels
             sont les
             acteurs qui peuvent m’aider dans les démarches ? Les réponses à ces questions sont dans cet épisode !</p>
           <div class="podcast__left__player">
@@ -234,7 +244,11 @@
               <img src="./assets/images/pause.svg" alt="">
             </div>
             <div class="podcast__left__player__rangePlayer">
-              <input class="podcast__left__player__rangePlayer__range" type="range" name="" id="" min="0" max="100">
+              <div class="timeline_container">
+                <div id="timeline" class="timeline">
+                  <div id="playhead"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -270,13 +284,14 @@
                   de
                   la demande de devis et de la relation commerciale qui peut en découler.</p>
               </div>
+              <input class="contact__container__right__submit" type="submit" value="ENVOYER MA DEMANDE">
             </form>
           </div>
         </div>
       </div>
     </section>
   </div>
-
+  <script src="./assets/js/main.js" defer></script>
 </body>
 
 </html>
